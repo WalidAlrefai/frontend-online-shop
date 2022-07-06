@@ -92,13 +92,13 @@ export default function Main() {
         handleShow();
     }
     useEffect(() => {
-            getItems();
+        getItems();
     }, []);
 
     return (
         <div className='main'>
-            <div style={{margin:'0 0 0 1.9%'}} >
-                <AddItem  />
+            <div style={{ margin: '0 0 0 1.9%' }} >
+                <AddItem />
             </div>
             <div className="card-items">
                 {
@@ -175,14 +175,15 @@ export default function Main() {
                                                     onChange={handelChange}
                                                     defaultValue={item.itemPrice}
                                                 />
-                                                <Form.Group>
-                                                    <textarea
-                                                        rows="4" cols="50"
+                                                    <Form.Control
+                                                        as="textarea"
                                                         onChange={handelChange}
-                                                        id="itemDescription" className="input-class" name="itemDescription" placeholder="Item description"
+                                                        id="itemDescription"
+                                                        name="itemDescription"
+                                                        placeholder="Write Description Item"
+                                                        style={{ height: '100px' }}
                                                         defaultValue={item.itemDescription}
                                                     />
-                                                </Form.Group>
                                                 <Button color="success" style={{ marginTop: "20px" }} type='submit'>
                                                     Update
                                                 </Button>
