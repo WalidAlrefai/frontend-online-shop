@@ -1,0 +1,40 @@
+.main {
+    .card-items {
+        margin-left: 3%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4%;
+
+        .item-card {
+            border-radius: 5px;
+
+            &:hover {
+                box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+
+            }
+
+            .card-footer {
+                display: flex;
+                justify-content: space-between;
+
+                #deleteB {
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+
+                #editB {
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+
+                #favoriteB {
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
