@@ -38,7 +38,7 @@ export default function Favorite() {
             {
                 items.allItemsForUser?.map(item => {
                     return (
-                        <Card className='card-favorite'  style={{ width: '18rem' }}>
+                        <Card className='card-favorite'  style={{ width: '24rem' }}>
                             <Card.Img variant="top" src={item.itemImage} />
                             <Card.Body>
                                 <div className="card-favorites-title">
