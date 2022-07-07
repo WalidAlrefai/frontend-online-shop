@@ -109,7 +109,7 @@ export default function Main() {
                                 <Card className="item-card" style={{ width: '18rem' }}>
                                     <Card.Img variant="top" src={item.itemImage} />
                                     <Card.Body>
-                                        <Card.Title>{item.itemName}</Card.Title>
+                                        <Card.Title style={{ height: '4rem' }}>{item.itemName}</Card.Title>
                                     </Card.Body>
                                     <div className='card-footer'>
                                         <div className="view-details">
